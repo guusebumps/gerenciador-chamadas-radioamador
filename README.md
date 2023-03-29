@@ -1,6 +1,6 @@
 # Gerenciador de Chamadas Radioamador
 
-Fiz esse projeto a pedido do meu professor da faculdade Virgilio Cesar Leandro, o qual é radioamador. Ele me solicitou esse software para armazenar suas conexões em um banco de dados e podendo imprimir as mesmas em excel. O programa tem uma interface gráfica e faz conexão com o banco de dados SQLite, onde cria uma tabela com as colunas necessárias para armazenar os dados. Neste Programa é possível inserir, editar e excluir linhas da tabela através da interface, além de poder gerar um arquivo em excel da tabela.
+  Fiz esse projeto a pedido do meu professor da faculdade Virgilio Cesar Leandro, o qual é radioamador. Ele me solicitou esse software para armazenar suas conexões em um banco de dados e podendo imprimir as mesmas em excel. O programa tem uma interface gráfica e faz conexão com o banco de dados SQLite, onde cria uma tabela com as colunas necessárias para armazenar os dados. Neste Programa é possível inserir, editar e excluir linhas da tabela através da interface, além de poder gerar um arquivo em excel da tabela.
 
 # Bibliotecas Utilizadas: 
 
