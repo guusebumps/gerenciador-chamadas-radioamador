@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Gerenciador de chamadas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/icone.ico</normaloff>Icons/icone.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(202, 202, 194);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(202, 202, );</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:25px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Gerenciamento &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;de chamadas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesquisar por id do aluno. (Valores válidos: id entre 1 e 300).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Q S O  N.º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_6">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesquisa pelo nome do aluno.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Data</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesquisar por matricula ativa. (Valores válidos: 1 e 0)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Prefixo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesquisar por tipo da matrícula. (Valores válidos: 30, 90, 180, 360.)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Hora(Início)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_4">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesquisar por data de inicio. (Formato válido: AAAA-MM-DD)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Hora(Fim)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_7">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Frequência ou Faixa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_8">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Fonia ou CW</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_9">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>R S T (Enviado)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_10">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>R S T (Recebido)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_11">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Q S L (Enviado)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_12">
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Q S L (Recebido)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_5">
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Pesuisar todos os registros de alunos.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-size:15px;
+font-weight: bold;
+</string>
+            </property>
+            <property name="text">
+             <string>Todos os registros</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Botão pesquisar. A pesquisa é feita de acordo com o tipo de pesquisa selecionado acima.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+
+}
+
+QPushButton:hover{
+background-color: green;
+
+}
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Pesquisar</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icons/searchicon-removebg-preview-removebg-preview.png</normaloff>Icons/searchicon-removebg-preview-removebg-preview.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(202, 202, 194);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="rowCount">
+             <number>0</number>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>110</number>
+            </attribute>
+            <attribute name="horizontalHeaderMinimumSectionSize">
+             <number>110</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Q S O 
+   Nº.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>DATA</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PREFIXO</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>HORA 
+INÍCIO</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>HORA 
+ FIM</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>FREQ. 
+  ou 
+FAIXA</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>FONIA 
+   ou 
+  CW</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>RST
+ENV.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>RST 
+REC.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Q S L 
+ ENV.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Q S L 
+ REC.</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>  OUTRAS 
+ANOTAÇÕES</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+      <zorder>frame_4</zorder>
+      <zorder>frame_3</zorder>
+      <zorder>line_2</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>9898989</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(202, 202, 194);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(202, 202, 194);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Botão voltar. Volta ao modulo inicial.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  padding: 15px 25px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+
+}
+
+QPushButton:hover{
+background-color: green;
+
+}
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Gerar Excel</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_6">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(202, 202, 194);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Botão inserir. Abre uma nova janela para a inserção de registros.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+
+}
+
+QPushButton:hover{
+background-color: blue;
+
+}
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Inserir</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icons/InserirIcon-removebg-preview-removebg-preview.png</normaloff>Icons/InserirIcon-removebg-preview-removebg-preview.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Botão alterar. Abre uma nova janela para alteração de registros.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+
+}
+
+QPushButton:hover{
+background-color: orange;
+
+}
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Alterar</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icons/updateicon-removebg-preview-removebg-preview.png</normaloff>Icons/updateicon-removebg-preview-removebg-preview.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>60</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Botão excluir. Abre uma nova janela para e exclusão de registros.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+
+}
+
+QPushButton:hover{
+background-color: red;
+
+}
+
+QPushButton:pressed{
+  background-color: #3e8e41;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Excluir</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icons/deleteicon-removebg-preview-removebg-preview.png</normaloff>Icons/deleteicon-removebg-preview-removebg-preview.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
