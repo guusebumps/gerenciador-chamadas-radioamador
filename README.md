@@ -10,6 +10,8 @@
 - xlwt
 - openpyxl
 
+# Utilização do programa
+
 Para conseguir rodar o programa, é necessário ter o sqlite rodando no computador. Para fazer isso é necessário baixar os arquivos no site do sqlite e adicioná-los a variável de ambiente do Windows chamada "Path". Para ter melhor entendimento sobre esse processo, recomendo um vídeo no youtube a seguir: https://youtu.be/gsZmB_MMKyc
 
 # Screenshots
